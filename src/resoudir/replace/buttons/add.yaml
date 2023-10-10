@@ -1,0 +1,7 @@
+id: ADD
+validate: true
+method: POST
+upload: true
+confirm: true
+props:
+  type: primary  

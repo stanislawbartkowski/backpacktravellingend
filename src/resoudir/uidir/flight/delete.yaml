@@ -1,0 +1,19 @@
+fields:
+- replace-#fields: replace/fields/flight/fields
+
+header:
+  title: ~Delete flight
+
+replace#: replace/standform40
+
+restapivals: 
+  replace#: replace/crudop/initdelete
+  restaction: flight/action
+
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/buttons/delete
+  jsclick: B.getflightdelpars

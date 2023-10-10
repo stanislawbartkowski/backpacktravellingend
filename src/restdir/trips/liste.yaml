@@ -1,0 +1,15 @@
+proc: SQL
+action: >
+  with TRANS as 
+  ( select 0 as eventtype, trip_id, pk_ground_transportation as id, departure_time as start_date, arrival_time as end_date, price from ground_transportation),
+  FLI as 
+  ( select 1 as eventtype, trip_id,  pk_flights as id, departure_time as start_date, arrival_time as end_date, price from flights ),
+  STA as
+  ( select 2 as eventtype, trip_id, pk_stays as id, start_date, end_date, price from stays),
+  ALLE as 
+  ( select * from TRANS union select * from FLI union select * from STA) 
+  select * from ALLE where trip_id = ? order by start_date
+  
+pars:  
+- name: trip_id
+  type: int

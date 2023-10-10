@@ -1,0 +1,20 @@
+fields:
+- replace-#fields: replace/fields/users/fields
+
+header:
+  title: ~Delete the user
+
+replace#: replace/standform40
+
+restapivals: 
+  replace#: replace/crudop/initdelete
+  restaction: users/action
+
+js: b
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/buttons/delete
+  jsclick: B.getusersdelpars

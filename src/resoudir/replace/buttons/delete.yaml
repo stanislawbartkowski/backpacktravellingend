@@ -1,0 +1,5 @@
+id: DEL
+method: DELETE
+confirm: true
+props:
+  type: primary  

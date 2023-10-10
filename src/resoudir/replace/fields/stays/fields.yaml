@@ -1,0 +1,14 @@
+fields:
+- field: room_id
+  fieldtype: number
+- field: stays_date
+  fieldtype: date
+  range: true
+  iprops:
+    allowEmpty:
+    - false
+    - false
+- field: price
+  fieldtype: number  
+- field: total
+  fieldtype: number

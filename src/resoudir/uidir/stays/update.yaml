@@ -1,0 +1,14 @@
+fields:
+- replace-#fields: replace/fields/stays/fields
+
+header:
+  title: ~Changing stay data
+
+replace#: replace/standform40
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/update
+  restaction: stays/action

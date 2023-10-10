@@ -1,0 +1,30 @@
+fields:
+
+- field: participants
+  restlist:
+    listdef: users/list
+    list: users/list
+    multiselect: true
+
+header:
+  title: ~List of participants
+
+restapivals: 
+  method: POST
+  upload: true
+  restaction: trips/participantsaction
+  params:
+    what: initparticipants
+
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/buttons/update
+  restaction: trips/participantsaction
+  params:
+    what: updateparticipants
+
+
+

@@ -1,0 +1,5 @@
+fields:
+- label: username
+  max: 80
+- label: trip_info
+  max: 200

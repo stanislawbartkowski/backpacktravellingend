@@ -1,0 +1,14 @@
+fields:
+- replace-#fields: replace/fields/trips/fields
+
+header:
+  title: ~Adding new user    
+
+replace#: replace/standform40
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/add
+  restaction: trips/action

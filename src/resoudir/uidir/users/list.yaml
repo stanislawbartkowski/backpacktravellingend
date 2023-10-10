@@ -1,0 +1,39 @@
+columns:
+- field: pk_users
+  coltitle: id
+  fieldtype: number
+    
+- field: name
+- field: email
+- field: phone_number
+- field: description
+- field: created_at
+  fieldtype: date
+- field: updated_at
+  fieldtype: date
+- actions:
+    actions:
+    - message: update
+      listdef: users/update
+      modalprops:
+        width: 40%
+    - message: delete
+      listdef: users/delete
+      modalprops:
+        width: 40%
+    dropdown: true
+    dprops: 
+      type: text         
+
+rowkey: pk_users
+
+js: b
+  
+header:
+  toolbar:
+  - id: ADD
+    props:
+      type: primary
+    listdef: users/add
+    modalprops: 
+      width: 50%

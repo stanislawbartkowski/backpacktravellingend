@@ -1,0 +1,17 @@
+fields:
+- field: name
+  labe: username
+  validate:
+  - required: true
+- field: email
+  validate:
+  - required: true
+  - restaction:
+      replace#: replace/crudop/validateduplicate
+      restaction: users/action
+
+  props:
+    rules:
+    - type: email
+- field: phone_number
+- field: description

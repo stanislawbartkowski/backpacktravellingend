@@ -1,0 +1,14 @@
+columns:
+- field: eventtype
+  tags:
+    js: B.gettripstags
+- field: start_date
+  fieldtype: date
+- field: end_date
+  fieldtype: date
+- field: price
+  fieldtype: number
+
+
+js: b
+  

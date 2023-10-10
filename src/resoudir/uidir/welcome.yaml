@@ -1,0 +1,7 @@
+fields:
+- field: welcome
+  fieldtype: html
+  value:
+    value: > 
+      <h1>Hello, Welcome to Backpack Travelling world !</h1>
+      <h3>We make travel easy.</h3>

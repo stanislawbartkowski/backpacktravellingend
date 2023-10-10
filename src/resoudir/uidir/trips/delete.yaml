@@ -1,0 +1,23 @@
+fields:
+- replace-#fields: replace/fields/trips/fields
+
+header:
+  title: ~Delete trip
+
+replace#: replace/standform40
+
+jsrestapivals: B.inittripupdate
+
+restapivals: 
+  replace#: replace/crudop/initdelete
+  restaction: trips/action
+
+
+js: b
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/buttons/delete
+  jsclick: B.gettripsdelpars

@@ -1,0 +1,42 @@
+en:
+  users: Users
+  name: Name
+  email: E-mail
+  phone_number: Phone number
+  description: Description
+  duplicatedvalue: Duplicated value
+  created_at: Created
+  updated_at: Last updated
+  id: Id
+  trips: Trips
+  tripname: Trip name
+  location: Location
+  start_time: Start time
+  end_time: End time
+  flights: Flights
+  stays: Stays
+  transportation: Transportation
+  activities: Activities
+  tripdate: Trip date
+  transportation_date: Transportation
+  airline: Airline
+  from: From
+  to: To
+  departure: Departure
+  arrival: Arrival
+  has_air_con: Air con
+  has_wifi: Wifi
+  price: Price
+  total: Total
+  owner: Owner
+  latitude: Latitude
+  longitude: Longitude
+  published_at: Published at
+  room_id: Room
+  start_date: Start date
+  end_date: End date
+  stays_date: Stays date
+
+
+
+  

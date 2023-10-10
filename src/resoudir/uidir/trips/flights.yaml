@@ -1,0 +1,56 @@
+columns:
+- field: pk_flights
+  coltitle: id
+  fieldtype: number
+- field: airline
+- field: fromid
+  coltitle: from
+- field: toid
+  coltitle: to
+- field: departure_time
+  coltitle: departure
+  fieldtype: date
+- field: arrival_time
+  coltitle: arrival
+  fieldtype: date
+- field: has_air_con
+  fieldtype: boolean
+- field: has_wifi
+  fieldtype: boolean
+- field: price
+- field: published_at
+  fieldtype: date
+- field: onwer_id
+  coltitle: owner
+  fieldtype: number
+- field: latitude
+  fieldtype: number
+- field: longitude
+  fieldtype: number  
+- replace-#columns: replace/updatecols
+- actions:
+    actions:
+    - message: update
+      listdef: flight/update
+      modalprops:
+        width: 40%
+    - message: delete
+      listdef: flight/delete
+      modalprops:
+        width: 40%
+    dropdown: true
+    dprops: 
+      type: text         
+
+
+rowkey: pk_flights
+
+header:
+  title: ~List of flights
+  toolbar:
+  - id: ADD
+    props:
+      type: primary
+    listdef: flight/add
+    modalprops: 
+      width: 50%

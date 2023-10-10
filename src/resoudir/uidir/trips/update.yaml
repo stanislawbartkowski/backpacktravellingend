@@ -1,0 +1,18 @@
+fields:
+- replace-#fields: replace/fields/trips/fields
+
+header:
+  title: ~Update trip data
+
+replace#: replace/standform40
+
+jsrestapivals: B.inittripupdate
+
+js: b
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/update
+  restaction: trips/action

@@ -1,0 +1,11 @@
+menu:
+- id: welcome
+  name: ~Welcome
+  icon: heartoutlined
+  listdef: welcome
+- id: users
+  icon: useroutlines
+  list: users/list
+- id: trips
+  icon: tableoutlined
+  list: trips/list

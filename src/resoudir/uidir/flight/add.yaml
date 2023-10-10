@@ -1,0 +1,14 @@
+fields:
+- replace-#fields: replace/fields/flight/fields
+
+header:
+  title: ~Adding flight
+
+replace#: replace/standform40
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/add
+  restaction: flight/action

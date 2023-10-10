@@ -1,0 +1,6 @@
+replace#: replace/delrest
+action: flights.py
+pars:
+- name: what
+- name: pk
+  type: int

@@ -1,0 +1,12 @@
+formprops:
+  labelCol:
+    span: 6
+
+cardprops:
+  style:
+    width: 40%
+    border: solid 1px green
+    marginTop: 10
+    marginLeft: 10
+    borderRadius: 25px
+    boxShadow: 0 3px 10px rgb(0 0 0 / 0.2)

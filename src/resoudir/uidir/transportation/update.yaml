@@ -1,0 +1,14 @@
+fields:
+- replace-#fields: replace/fields/transportation/fields
+
+header:
+  title: ~Changing transportation data
+
+replace#: replace/standform40
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/update
+  restaction: transportation/action

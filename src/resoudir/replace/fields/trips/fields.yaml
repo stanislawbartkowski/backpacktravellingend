@@ -1,0 +1,37 @@
+fields:
+- field: name
+  coltitle: tripname
+  istextarea: true
+  iprops:
+      autoSize: true
+  validate:
+  - required: true
+  label: trip_info
+- field: location
+  label: trip_info
+  istextarea: true
+  iprops:
+      autoSize: true
+- field: tripdate
+  fieldtype: date
+  range: true
+  iprops:
+    allowEmpty:
+    - false
+    - false
+- field: flights
+  istextarea: true
+  iprops:
+      autoSize: true
+- field: stays
+  istextarea: true
+  iprops:
+      autoSize: true
+- field: transportation
+  istextarea: true
+  iprops:
+      autoSize: true
+- field: activities
+  istextarea: true
+  iprops:
+      autoSize: true

@@ -1,0 +1,4 @@
+method: POST
+upload: true
+params:
+  what: initdelete

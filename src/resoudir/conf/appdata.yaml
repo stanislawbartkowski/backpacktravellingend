@@ -1,0 +1,15 @@
+appname: Backpack travelling
+logo: logo192.png
+logosmall: logo192.png
+language: en
+title: Backpack travelling
+version: version 1.00 (r:0) 2023/06/11
+js: j,b
+toolbar:
+  features:
+    extendedsearch: true
+    tablesize: true
+    arrangecol: true
+    excelfile: true
+  resize:
+    resize: true

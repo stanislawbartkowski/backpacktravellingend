@@ -1,0 +1,41 @@
+columns:
+- field: pk_stays
+  coltitle: id
+  fieldtype: number
+- field: room_id
+  fieldtype: number
+- field: start_date
+  fieldtype: date
+- field: end_date
+  fieldtype: date
+- field: price
+  fieldtype: number  
+- field: total
+  fieldtype: number
+- replace-#columns: replace/updatecols
+- actions:
+    actions:
+    - message: update
+      listdef: stays/update
+      modalprops:
+        width: 40%
+    - message: delete
+      listdef: stays/delete
+      modalprops:
+        width: 40%
+    dropdown: true
+    dprops: 
+      type: text         
+
+
+rowkey: pk_stay
+
+header:
+  title: ~List of stays
+  toolbar:
+  - id: ADD
+    props:
+      type: primary
+    listdef: stays/add
+    modalprops: 
+      width: 50%

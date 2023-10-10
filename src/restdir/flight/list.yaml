@@ -1,0 +1,5 @@
+proc: SQL
+action: select * from flights where trip_id = ?
+pars:
+- name: trip_id
+  type: int

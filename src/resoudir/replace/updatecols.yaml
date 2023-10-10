@@ -1,0 +1,5 @@
+columns:
+- field: created_at
+  fieldtype: date
+- field: updated_at
+  fieldtype: date

@@ -1,0 +1,68 @@
+columns:
+- field: pk_trips
+  coltitle: id
+  fieldtype: number
+- field: name
+  coltitle: tripname
+- field: location
+- field: start_time
+  fieldtype: date
+- field: end_time
+  fieldtype: date
+- field: flights
+- field: stays
+- field: transportation
+- field: activities
+- replace-#columns: replace/updatecols
+
+- actions:
+    actions:
+    - message: update
+      listdef: trips/update
+      modalprops:
+        width: 40%
+    - message: delete
+      listdef: trips/delete
+      modalprops:
+        width: 40%
+    - messagedirect: Participants
+      listdef: trips/participants
+      modalprops:
+        width: 40%
+    - messagedirect: Transportation
+      listdef: trips/transportation
+      list: true
+      modalprops:
+        width: 80%
+      jsaction: B.inittransportationpars
+    - messagedirect: Flights
+      listdef: trips/flights
+      list: true
+      modalprops:
+        width: 80%
+      jsaction: B.initflighpars
+    - messagedirect: Stays
+      listdef: trips/stays
+      list: true
+      modalprops:
+        width: 80%
+      jsaction: B.initstayspars
+    dropdown: true
+    dprops: 
+      type: text
+    
+js: b
+
+rowkey: pk_trips
+
+extendable: 
+  jsclick: B.getexpandtrips
+
+header:
+  toolbar:
+  - id: ADD
+    props:
+      type: primary
+    listdef: transportation/add
+    modalprops: 
+      width: 50%

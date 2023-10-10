@@ -1,0 +1,4 @@
+proc: PYTHON3
+output: TMPFILE
+method: DELETE
+setenvir: true

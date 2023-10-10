@@ -1,0 +1,7 @@
+proc: SQL
+action: delete from users where pk_users = ?
+updatequery: true
+method: DELETE
+pars:
+- name: id
+  type: int

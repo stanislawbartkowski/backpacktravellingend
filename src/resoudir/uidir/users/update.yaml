@@ -1,0 +1,15 @@
+fields:
+- replace-#fields: replace/fields/users/fields
+
+header:
+  title: ~Change the user data
+
+replace#: replace/standform40
+
+buttons:
+- id: CANCEL
+  close: true
+  
+- replace#: replace/crudop/update
+  restaction: users/action
+
